@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Design & Desenvolvimento</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="logo">DEV<span>&</span>DESIGN</a>
+            <button class="menu-btn" id="menu-btn"><i class="fas fa-bars"></i></button>
+            <nav class="nav-links" id="nav-links">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#portfolio">Portfólio</a>
+                <a href="curriculo.html" style="color: var(--primary-color);">Currículo</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content reveal">
+            <h1 class="gradient-text">Criando experiências através da lógica e do design.</h1>
+            <p id="typing-text" class="subtitle"></p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn btn-primary">Ver Projetos</a>
+                <a href="#contato" class="btn btn-outline">Falar Comigo</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <div class="container reveal">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Estudante de ADS & Profissional Criativo</h3>
+                    <p>Navego entre a estruturação rigorosa do Desenvolvimento de Sistemas e a criatividade pulsante da publicidade In-House e OOH. Acredito que a tecnologia mais eficiente é aquela que também oferece a melhor experiência visual.</p>
+                </div>
+                <div class="about-skills">
+                    <div class="skill-tag"><i class="fab fa-python"></i> Python & Automação</div>
+                    <div class="skill-tag"><i class="fas fa-mobile-alt"></i> UX/UI Design</div>
+                    <div class="skill-tag"><i class="fas fa-paint-brush"></i> Identidade Visual & OOH</div>
+                    <div class="skill-tag"><i class="fas fa-cube"></i> Modelagem & Mascotes 3D</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container reveal">
+            
+            <h2 class="section-title text-start mb-4">Social Media & Criativos</h2>
+            <div class="carousel-viewport">
+                <div class="carousel-track auto-scroll" id="track-design">
+                    
+                    <div class="card card-horizontal" onclick="abrirGaleria('estilounico')">
+                        <div class="card-img" style="background-image: url('img/projetos/estilounico/1.png');"></div>
+                        <div class="card-body">
+                            <span class="badge">Identidade Visual</span>
+                            <h3>Estilo Único</h3>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div> 
+
+            <h2 class="section-title text-start mb-4 mt-5 pt-4">Desenvolvimento Web</h2>
+            <div class="carousel-viewport">
+                <div class="carousel-track" id="track-web">
+                    
+                    <div class="card card-horizontal" onclick="abrirAppFuncional('https://www.implantuspesqueira.com.br/')">
+                        <div class="card-img" style="background-image: url('https://placehold.co/600x600/1e293b/10b981?text=Implantus+Links');"></div>
+                        <div class="card-body">
+                            <span class="badge">Aplicação Full-Stack</span>
+                            <h3>Implantus Pesqueira</h3>
+                            <p class="small text-muted mt-2">Gerenciador de Links</p>
+                        </div>
+                    </div>
+
+                    <div class="card card-horizontal border-dashed" style="display: flex; align-items: center; justify-content: center; background: transparent;">
+                        <div class="text-center text-muted">
+                            <i class="fas fa-plus fa-2x mb-2"></i>
+                            <p>Em breve novos projetos</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="modal-galeria" class="modal-overlay" onclick="fecharModal('modal-galeria', event)">
+        <div class="modal-content modal-behance">
+            <button class="fechar-btn" onclick="fecharModalDireto('modal-galeria')"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h2 id="galeria-titulo" class="gradient-text">Título</h2>
+            </div>
+            <div id="galeria-grid" class="dynamic-grid"></div>
+        </div>
+    </div>
+
+    <div id="modal-app" class="modal-overlay" onclick="fecharModal('modal-app', event)">
+        <div class="modal-content modal-iframe">
+            <button class="fechar-btn" onclick="fecharModalDireto('modal-app')"><i class="fas fa-times"></i></button>
+            <div class="iframe-wrapper">
+                <iframe id="iframe-app" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox-overlay" onclick="fecharLightbox()">
+        <button class="fechar-btn"><i class="fas fa-times"></i></button>
+        <img id="lightbox-img" src="" alt="Imagem Ampliada">
+    </div>
+
+    <section id="contato" class="contact">
+        <div class="container reveal">
+            <h2 class="gradient-text text-center">Vamos construir algo juntos?</h2>
+            <p class="text-center">Aberto a desafios que unam programação, dados e design de alto impacto.</p>
+            <div class="contact-actions">
+                <a href="mailto:contatopedrohaa@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Enviar E-mail</a>
+            </div>
+            <footer>
+                <p>&copy; 2026 Desenvolvido com código e design.</p>
+            </footer>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
