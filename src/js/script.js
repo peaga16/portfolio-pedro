@@ -4,7 +4,7 @@
 const projetosGaleria = {
     'estilounico': {
         titulo: 'Loja de Roupas - Social Media',
-        pasta: 'img/projetos/estilounico/', 
+        pasta: 'src/img/estilounico/', 
         fotos: [
             // 6 = Metade (2 por linha)
             // 4 = Um terço (3 por linha)
@@ -20,7 +20,7 @@ const projetosGaleria = {
     },
     'lojasuplementos': {
         titulo: 'Loja de Suplementos - Social Media',
-        pasta: 'img/projetos/lojasuplementos/',
+        pasta: 'src/img/lojasuplementos/',
         fotos: [
             ['1.png', 4],
             ['2.jpg', 4],
@@ -35,7 +35,7 @@ const projetosGaleria = {
     },
     'estetica': {
         titulo: 'Estética - Social Media',
-        pasta: 'img/projetos/estetica/',
+        pasta: 'src/img/estetica/',
         fotos: [
             ['1.png', 6],
             ['2.png', 6],
@@ -205,3 +205,24 @@ if (glow) {
     });
     document.addEventListener('mouseleave', () => glow.style.opacity = '0');
 }
+
+
+// =========================================================
+// EFEITO PARALLAX NO SCROLL DA TELA INICIAL
+// =========================================================
+const heroContent = document.querySelector('.hero-content');
+
+window.addEventListener('scroll', () => {
+    if (heroContent) {
+        let scrollY = window.scrollY;
+        
+        // Conforme desce, a opacidade diminui (some em 600px de rolagem)
+        let opacidade = 1 - (scrollY / 600); 
+        
+        // Faz o texto ir descendo um pouco (mais devagar que a rolagem)
+        let movimentoY = scrollY * 0.4; 
+        
+        heroContent.style.opacity = opacidade > 0 ? opacidade : 0;
+        heroContent.style.transform = `translateY(${movimentoY}px)`;
+    }
+});
