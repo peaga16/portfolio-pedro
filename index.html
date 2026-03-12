@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- SEO & Open Graph -->
     <title>Pedro Andrade | North Design Studio</title>
     <meta name="description" content="Portfólio de Pedro Andrade — Designer Gráfico e Desenvolvedor Web. Especialista em identidade visual, UX/UI e desenvolvimento de projetos digitais.">
     <meta name="author" content="Pedro Andrade">
@@ -14,31 +12,25 @@
     <meta property="og:image" content="img/og-preview.png">
     <meta name="theme-color" content="#9d8df1">
 
-    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
-    <!-- Ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Estilos -->
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
 
-    <!-- Efeito de iluminação que segue o cursor -->
-    <div id="mouse-glow" aria-hidden="true"></div>
+   <div id="mouse-glow" aria-hidden="true"></div>
 
-    <!-- ===================== NAVBAR ===================== -->
-    <header class="navbar" id="navbar" role="banner">
+   <header class="navbar" id="navbar" role="banner">
         <div class="nav-container">
 
-            <!-- Logo com fallback caso a imagem não carregue -->
-            <a href="#inicio" class="logo-link" aria-label="North Design Studio – Ir para o início">
+                 <a href="#inicio" class="logo-link" aria-label="North Design Studio – Ir para o início">
                 <img
-                    src="img/logo/sua-logo.png"
-                    alt="North Design Studio"
+                    src="src/img/perfil/logo site.png"
+                    alt="Pedro Andrade - North Design Studio"
                     class="logo-img"
                     width="180"
                     height="40"
@@ -46,8 +38,7 @@
                 >
             </a>
 
-            <!-- Botão hambúrguer (mobile) -->
-            <button
+        <button 
                 class="menu-btn"
                 id="menu-btn"
                 aria-label="Abrir menu de navegação"
@@ -57,8 +48,7 @@
                 <i class="fas fa-bars" aria-hidden="true"></i>
             </button>
 
-            <!-- Menu de navegação principal -->
-            <nav class="nav-links" id="nav-links" role="navigation" aria-label="Menu principal">
+           <nav class="nav-links" id="nav-links" role="navigation" aria-label="Menu principal">
                 <a href="#inicio">Início</a>
                 <a href="#sobre">Sobre</a>
                 <a href="#portfolio">Portfólio</a>
@@ -69,7 +59,6 @@
         </div>
     </header>
 
-    <!-- ===================== HERO ===================== -->
     <main id="conteudo-principal">
 
         <section id="inicio" class="hero" aria-labelledby="hero-titulo">
@@ -78,32 +67,44 @@
                     Criando experiências através da lógica e do design.
                 </h1>
 
-                <!-- Texto com efeito de digitação — preenchido pelo script.js -->
-                <p id="typing-text" class="subtitle" aria-live="polite"></p>
+               <p id="typing-text" class="subtitle" aria-live="polite"></p>
 
-                <div class="hero-buttons">
+               <div class="hero-buttons">
                     <a href="#portfolio" class="btn btn-primary">Ver Projetos</a>
                     <a href="#contato" class="btn btn-outline">Falar Comigo</a>
                 </div>
             </div>
         </section>
 
-        <!-- ===================== SOBRE ===================== -->
         <section id="sobre" class="about" aria-labelledby="sobre-titulo">
             <div class="container reveal">
                 <h2 id="sobre-titulo" class="section-title">Sobre Mim</h2>
-
-
                 
                 <div class="about-grid">
-                <div class="profile-wrapper"> <img src="src/img/perfil/pedro-perfil.png" alt="foto-pedro" class="profile-img" /></div>
+                    <div class="profile-wrapper"> 
+                        <img src="src/img/perfil/pedro-perfil.png" alt="foto-pedro" class="profile-img" />
+                        <div class="about-skills" role="list" aria-label="Habilidades">
+                            <div class="skill-tag skill-1" role="listitem">
+                                <i class="fas fa-bezier-curve" aria-hidden="true"></i> Design Gráfico
+                            </div>
+                            <div class="skill-tag skill-2" role="listitem">
+                                <i class="fas fa-mobile-alt" aria-hidden="true"></i> UX/UI Design
+                            </div>
+                            <div class="skill-tag skill-3" role="listitem">
+                                <i class="fas fa-paint-brush" aria-hidden="true"></i> Identidade Visual &amp; OOH
+                            </div>
+                            <div class="skill-tag skill-4" role="listitem">
+                                <i class="fas fa-code" aria-hidden="true"></i> Desenvolvimento Web
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="about-text">
-                       
                         <h3>Quem é Pedro Henrique?</h3>
 
                         <p>
-                            Atualmente sou Designer Gráfico na <strong>Agência Connecta</strong>, onde aplico minhas competências
-                            em design gráfico e edição de vídeo. Utilizo ferramentas como o Adobe Photoshop para criar projetos
+                            Atualmente sou <strong>Designer Gráfico</strong> na Agência Connectra,<br>
+                            onde aplico minhas competências em design gráfico e edição de vídeo. Utilizo ferramentas como o Adobe Photoshop para criar projetos
                             visuais de impacto, com experiência em design estratégico para mídias OOH e conteúdo visual para
                             redes sociais, contribuindo para identidades de marca consistentes.
                         </p>
@@ -115,38 +116,20 @@
                             que agreguem valor real às marcas.
                         </p>
                     </div>
-
-                    <!-- Tags de habilidades -->
-                    <div class="about-skills" role="list" aria-label="Habilidades">
-                        <div class="skill-tag" role="listitem">
-                            <i class="fas fa-bezier-curve" aria-hidden="true"></i> Design Gráfico
-                        </div>
-                        <div class="skill-tag" role="listitem">
-                            <i class="fas fa-mobile-alt" aria-hidden="true"></i> UX/UI Design
-                        </div>
-                        <div class="skill-tag" role="listitem">
-                            <i class="fas fa-paint-brush" aria-hidden="true"></i> Identidade Visual &amp; OOH
-                        </div>
-                        <div class="skill-tag" role="listitem">
-                            <i class="fas fa-code" aria-hidden="true"></i> Desenvolvimento Web
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- ===================== PORTFÓLIO ===================== -->
         <section id="portfolio" class="portfolio" aria-labelledby="portfolio-titulo">
             <div class="container reveal">
 
-                <!-- Categoria: Social Media -->
                 <h2 id="portfolio-titulo" class="section-title text-start mb-4">Social Media &amp; Criativos</h2>
 
                 <div class="carousel-viewport" role="region" aria-label="Carrossel — Social Media">
                     <div class="carousel-track auto-scroll" id="track-design">
 
                         <article class="card card-horizontal" onclick="abrirGaleria('estilounico')" role="button" tabindex="0" aria-label="Ver projeto: Loja de Roupas">
-                            <div class="card-img" style="background-image: url('src/img/estilounico/1.png');" role="img" aria-label="Capa do projeto Loja de Roupas"></div>
+                            <div class="card-img" style="background-image: url('src/img/estilounico/capa.png');" role="img" aria-label="Capa do projeto Loja de Roupas"></div>
                             <div class="card-body">
                                 <span class="badge">Social Media</span>
                                 <h3>Loja de Roupas</h3>
@@ -201,11 +184,9 @@
                             </div>
                         </article>
 
-                
                     </div>
                 </div>
 
-                <!-- Categoria: Desenvolvimento Web -->
                 <h2 class="section-title text-start mb-4 mt-5 pt-4">Desenvolvimento Web</h2>
 
                 <div class="carousel-viewport" role="region" aria-label="Carrossel — Desenvolvimento Web">
@@ -225,21 +206,12 @@
                             </div>
                         </article>
 
-                        <!-- Card placeholder para projetos futuros -->
-                        <div class="card card-horizontal border-dashed" aria-hidden="true" style="display: flex; align-items: center; justify-content: center; background: transparent;">
-                            <div class="text-center text-muted">
-                                <i class="fas fa-plus fa-2x mb-2" aria-hidden="true"></i>
-                                <p>Em breve novos projetos</p>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <!-- ===================== CONTATO ===================== -->
         <section id="contato" class="contact" aria-labelledby="contato-titulo">
             <div class="container reveal text-center">
                 <h2 id="contato-titulo" class="gradient-text text-center">Vamos construir algo juntos?</h2>
@@ -268,14 +240,10 @@
 
     </main>
 
-    <!-- ===================== RODAPÉ ===================== -->
     <footer role="contentinfo" style="margin-top: 80px; padding-bottom: 2rem;">
         <p style="text-align: center;">&copy; 2026 Pedro Andrade | North Design Studio.</p>
     </footer>
 
-    <!-- ===================== MODAIS ===================== -->
-
-    <!-- Modal de galeria de imagens (Social Media) -->
     <div
         id="modal-galeria"
         class="modal-overlay"
@@ -295,7 +263,6 @@
         </div>
     </div>
 
-    <!-- Modal de aplicação em iframe -->
     <div
         id="modal-app"
         class="modal-overlay"
@@ -314,7 +281,7 @@
         </div>
     </div>
 
-    <!-- Lightbox para imagens ampliadas -->
+
     <div
         id="lightbox"
         class="lightbox-overlay"
@@ -329,7 +296,6 @@
         <img id="lightbox-img" src="" alt="Imagem ampliada do projeto">
     </div>
 
-    <!-- Scripts -->
     <script src="src/js/script.js"></script>
 </body>
 </html>
