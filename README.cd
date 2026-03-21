@@ -1,12 +1,33 @@
-## Pedro Henrique Alves Andrade 
+# <font color="red">Pedro Henrique</font>
 
-# Portfólio - Landing Page
+
+#Portfólio - Landing Page
 ### Este é meu portfólio de Design e Progrmaação Full-Stack
 
-## Linguagem Utilizada
-- HTML
-- CSS
-- JavaScript
-- Framework (Bootstrap)
+##Linguagem Utilizada
+-HTML
+-CSS
+-JavaScript
+-Framework (Bootstrap)
 
-## Como executar
+##Como executar?
+
+###Na sua máquina, clone o repositório:
+-git clone <https://github.com/peaga16/portfolio-pedro.git>
+
+###Acesse a pasta
+-cd portfolio-pedro
+
+###Instale dependências
+-npm install
+
+###Inicie o projeto
+-npm start
+
+##Gostou? Entre em contato
+
+-Email: contatopedrohaa@gmail.com
+-LinkedIn: https://www.linkedin.com/in/pedro-north-38913b2a7/
+- Behance: behance.net/northstudiobr
+
+
