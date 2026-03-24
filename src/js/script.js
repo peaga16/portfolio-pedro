@@ -1,48 +1,122 @@
 // =========================================================
 // 1. SEU BANCO DE DADOS LOCAL (Sistema de 12 Colunas)
 // =========================================================
-const projetosGaleria = {
-    'estilounico': {
-        titulo: 'Loja de Roupas - Social Media',
-        pasta: 'src/img/estilounico/', 
-        fotos: [
             // 6 = Metade (2 por linha)
             // 4 = Um terço (3 por linha)
             // 12 = Tela cheia
-            ['1.png', 6], 
-            ['2.png', 6], 
-            ['3.png', 4],
-            ['4.png', 4],
-            ['5.png', 4],
-            ['6.png', 12],
-            ['7.png', 12]
+const projetosGaleria = {
+ 'estilounico': {
+        titulo: 'Loja de Roupas - Social Media',
+        pasta: 'src/img/estilounico/', 
+        fotos: [
+            ['1.png', 30],
+            ['2.png', 30], 
+            ['3.png', 20],
+            ['4.png', 20],
+            ['5.png', 20],
+            ['6.png', 60],
+            ['7.png', 60]
         ]
     },
     'lojasuplementos': {
         titulo: 'Loja de Suplementos - Social Media',
         pasta: 'src/img/lojasuplementos/',
         fotos: [
-            ['1.png', 4],
-            ['2.jpg', 4],
-            ['3.png', 4], 
-            ['4.png', 4],
-            ['5.png', 4],
-            ['6.png', 4],
-            ['7.jpg', 4],
-            ['8.png', 4],
-            ['9.png', 4]
+            ['1.png', 20],
+            ['2.jpg', 20],
+            ['3.png', 20], 
+            ['4.png', 20],
+            ['5.png', 20],
+            ['6.png', 20],
+            ['7.jpg', 20],
+            ['8.png', 20],
+            ['9.png', 20]
         ]
     },
     'estetica': {
         titulo: 'Estética - Social Media',
         pasta: 'src/img/estetica/',
         fotos: [
-            ['1.png', 6],
-            ['2.png', 6],
-            ['3.png', 6], 
-            ['4.png', 6],
-            ['5.png', 12],
-            ['6.png', 12]
+            ['1.png', 30],
+            ['2.png', 30],
+            ['3.png', 30], 
+            ['4.png', 30],
+            ['5.png', 60],
+            ['6.png', 60]
+        ]
+    },
+    'protecaov': {
+        titulo: 'Proteção Veicular - Social Media',
+        pasta: 'src/img/protecaov/',
+        fotos: [
+            ['1.png', 15],
+            ['2.png', 15],
+            ['3.png', 15],
+            ['4.png', 15],
+            ['5.png', 20],
+            ['6.png', 20],
+            ['7.png', 20],
+            ['8.png', 20],
+            ['9.png', 20],
+            ['10.png', 20],
+            ['11.png', 20],
+            ['12.png', 20],
+            ['13.png', 20],
+            ['destaque1.png', 10],
+            ['destaque2.png', 10],
+            ['destaque3.png', 10],
+            ['destaque4.png', 10],
+            ['destaque5.png', 10],
+            ['destaque6.png', 10]
+        ]
+    },
+    'prefeitura': {
+        titulo: 'Prefeitura - Social Media',
+        pasta: 'src/img/prefeitura/',
+        fotos: [
+            ['1.jpg', 20],
+            ['2.png', 20],
+            ['3.png', 20],
+            ['4.png', 15],
+            ['5.jpg', 15],
+            ['6.png', 15],
+            ['7.png', 15],
+            ['8.jpg', 20],
+            ['9.png', 20],
+            ['10.jpg', 20],
+            ['11.png', 15],
+            ['12.png', 15],
+            ['13.png', 15],
+            ['14.png', 15]
+        ]
+    },
+    'pincaecia': {
+        titulo: 'Pinca & Cia - Social Media',
+        pasta: 'src/img/pincaecia/',
+        fotos: [
+            ['1.png', 20],
+            ['2.png', 20],
+            ['3.png', 20],
+            ['4.png', 30],
+            ['5.png', 30],
+            ['6.png', 20],
+            ['7.png', 20],
+            ['8.png', 20],
+        ]
+    },
+        'consorcio': {
+        titulo: 'Consórcio - Social Media',
+        pasta: 'src/img/consorcio/',
+        fotos: [
+            ['1.png', 20],
+            ['2.png', 20],
+            ['3.png', 20],
+            ['4.png', 24],
+            ['5.png', 24],
+            ['6.jpg', 12],
+            ['7.png', 30],
+            ['8.jpg', 30],
+            ['9.jpg', 60]
         ]
     }
 };
