@@ -1,63 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Briefing Estratégico | North Design Studio</title>
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <link rel="stylesheet" href="src/css/style.css">
-    
-    <style>
-        /* Estilos específicos da página de Briefing */
-        .briefing-section { padding: 120px 20px 60px; min-height: 100vh; background: radial-gradient(circle at top right, #1a123a 0%, var(--bg-dark) 100%); }
-        .form-container { max-width: 850px; margin: 0 auto; background: var(--bg-card); padding: 50px; border-radius: 16px; border: 1px solid rgba(157, 141, 241, 0.2); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
-        
-        .form-section-title { color: var(--primary-color); font-size: 1.2rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin: 40px 0 20px; border-bottom: 1px solid rgba(157, 141, 241, 0.2); padding-bottom: 10px; }
-        .form-section-title:first-child { margin-top: 0; }
-        
-        .form-group { margin-bottom: 25px; text-align: left; }
-        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        
-        .form-group label { display: block; margin-bottom: 8px; color: var(--text-main); font-weight: 600; font-size: 0.95rem; }
-        .form-group label span { color: var(--text-muted); font-weight: 400; font-size: 0.85rem; }
-        
-        /* Inputs e Textareas */
-        .form-control { width: 100%; padding: 15px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(157, 141, 241, 0.2); border-radius: 8px; color: #fff; font-family: 'Inter', sans-serif; font-size: 1rem; transition: all 0.3s ease; }
-        .form-control:focus { outline: none; border-color: var(--primary-color); box-shadow: 0 0 15px var(--primary-glow); background: rgba(0, 0, 0, 0.2); }
-        .form-control::placeholder { color: rgba(163, 158, 197, 0.5); }
-        textarea.form-control { resize: vertical; min-height: 100px; }
-        
-        /* Estilo do Select (Caixa de opções) */
-        select.form-control { appearance: none; background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239d8df1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e"); background-repeat: no-repeat; background-position: right 15px center; background-size: 15px; cursor: pointer; }
-        select.form-control option { background: var(--bg-card); color: #fff; }
 
-        /* Estilo para o Input de Arquivo (Upload) */
-        input[type="file"].form-control { padding: 10px; border: 1px dashed rgba(157, 141, 241, 0.5); cursor: pointer; }
-        input[type="file"]::-webkit-file-upload-button { background: var(--gradient-accent); color: white; border: none; padding: 8px 15px; border-radius: 6px; font-weight: 600; cursor: pointer; margin-right: 15px; transition: 0.3s; }
-        input[type="file"]::-webkit-file-upload-button:hover { box-shadow: 0 0 10px var(--primary-glow); }
-
-        /* Checkboxes */
-        .checkbox-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; margin-top: 10px; }
-        .checkbox-item { display: flex; align-items: center; gap: 10px; color: var(--text-muted); cursor: pointer; transition: color 0.2s; }
-        .checkbox-item:hover { color: var(--primary-color); }
-        .checkbox-item input { accent-color: var(--primary-color); width: 18px; height: 18px; cursor: pointer; }
-
-        /* Responsividade para telemóvel */
-        @media (max-width: 768px) {
-            .form-container { padding: 30px 20px; }
-            .form-row { grid-template-columns: 1fr; gap: 0; }
-        }
-    </style>
+    <link rel="stylesheet" href="src/css/briefing.css">
 </head>
+
 <body>
 
     <header class="navbar scrolled" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo-link">
-                <img src="src/img/perfil/logo site.png" alt="North Design Studio" class="logo-img" height="40" style="filter: brightness(0) invert(1);">
+                <img src="src/img/perfil/logo site.png" alt="North Design Studio" class="logo-img" height="40"
+                    style="filter: brightness(0) invert(1);">
             </a>
             <nav class="nav-links" style="display: flex;">
                 <a href="index.html"><i class="fas fa-arrow-left"></i> Voltar ao site</a>
@@ -68,58 +31,70 @@
     <section class="briefing-section">
         <div class="container text-center">
             <h1 class="gradient-text mb-2">Briefing Estratégico</h1>
-            <p class="mb-5" style="color: var(--text-muted);">Vamos entender o seu negócio a fundo para criar um design que converte.</p>
+            <p class="mb-5" style="color: var(--text-muted);">Vamos entender o seu negócio a fundo para criar um design
+                que converte.</p>
 
             <div class="form-container reveal active">
-                
-                <form action="https://formsubmit.co/contatopedrohaa@gmail.com" method="POST" enctype="multipart/form-data">
-                    
+
+                <form action="https://formsubmit.co/contatopedrohaa@gmail.com" method="POST"
+                    enctype="multipart/form-data">
+
                     <input type="hidden" name="_subject" value="🔥 NOVO BRIEFING: Projeto de Design">
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" name="_captcha" value="false">
-                    
+
                     <h3 class="form-section-title"><i class="fas fa-user-tie"></i> 1. Sobre o seu negócio</h3>
-                    
+
                     <div class="form-row">
                         <div class="form-group">
                             <label for="nome">Nome da Empresa / Marca *</label>
-                            <input type="text" id="nome" name="Cliente" class="form-control" placeholder="Ex: North Design Studio" required>
+                            <input type="text" id="nome" name="Cliente" class="form-control"
+                                placeholder="Ex: North Design Studio" required>
                         </div>
                         <div class="form-group">
                             <label for="nicho">Nicho de Atuação *</label>
-                            <input type="text" id="nicho" name="Nicho" class="form-control" placeholder="Ex: Odontologia, Moda..." required>
+                            <input type="text" id="nicho" name="Nicho" class="form-control"
+                                placeholder="Ex: Odontologia, Moda..." required>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="instaCliente">Qual o Instagram atual da marca?</label>
-                        <input type="text" id="instaCliente" name="Instagram" class="form-control" placeholder="@suamarca ou link">
+                        <input type="text" id="instaCliente" name="Instagram" class="form-control"
+                            placeholder="@suamarca ou link">
                     </div>
 
                     <h3 class="form-section-title"><i class="fas fa-search"></i> 2. Mercado e Referências</h3>
-                    
+
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="concorrentes">Principais Concorrentes <span>(Links ou @ do Instagram)</span></label>
-                            <textarea id="concorrentes" name="Concorrentes" class="form-control" placeholder="Liste quem disputa os mesmos clientes que você..."></textarea>
+                            <label for="concorrentes">Principais Concorrentes <span>(Links ou @ do
+                                    Instagram)</span></label>
+                            <textarea id="concorrentes" name="Concorrentes" class="form-control"
+                                placeholder="Liste quem disputa os mesmos clientes que você..."></textarea>
                         </div>
                         <div class="form-group">
-                            <label for="inspiracoes">Marcas que o inspiram <span>(Onde quer chegar? Links ou @)</span></label>
-                            <textarea id="inspiracoes" name="Inspiracoes" class="form-control" placeholder="Ex: Adoro a paleta de cores da @apple e o feed da @nike..."></textarea>
+                            <label for="inspiracoes">Marcas que o inspiram <span>(Onde quer chegar? Links ou
+                                    @)</span></label>
+                            <textarea id="inspiracoes" name="Inspiracoes" class="form-control"
+                                placeholder="Ex: Adoro a paleta de cores da @apple e o feed da @nike..."></textarea>
                         </div>
                     </div>
 
-                    <h3 class="form-section-title"><i class="fas fa-bullseye"></i> 3. Objetivo do Design</h3>
+                    <h3 class="form-section-title"><i class="fas fa-map-pin"></i> 3. Objetivo do Design</h3>
 
                     <div class="form-group">
                         <label for="objetivo">Qual o objetivo principal destas artes? *</label>
-                        <textarea id="objetivo" name="Objetivo" class="form-control" placeholder="Ex: Lançar um produto novo, atrair mais seguidores, vender serviço X..." required></textarea>
+                        <textarea id="objetivo" name="Objetivo" class="form-control"
+                            placeholder="Ex: Lançar um produto novo, atrair mais seguidores, vender serviço X..."
+                            required></textarea>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group">
                             <label for="publico">Público-Alvo <span>(Idade, género, classe, dores)</span></label>
-                            <input type="text" id="publico" name="Publico_Alvo" class="form-control" placeholder="Ex: Mulheres dos 20 aos 35 anos da região...">
+                            <input type="text" id="publico" name="Publico_Alvo" class="form-control"
+                                placeholder="Ex: Mulheres dos 20 aos 35 anos da região...">
                         </div>
                         <div class="form-group">
                             <label for="tomVoz">Tom de Voz da Marca</label>
@@ -136,35 +111,46 @@
                     <h3 class="form-section-title"><i class="fas fa-layer-group"></i> 4. O que vamos criar?</h3>
                     <div class="form-group">
                         <div class="checkbox-grid">
-                            <label class="checkbox-item"><input type="checkbox" name="Entregaveis[]" value="Post Feed"> Posts para Feed (Insta/FB)</label>
-                            <label class="checkbox-item"><input type="checkbox" name="Entregaveis[]" value="Stories"> Stories animados/estáticos</label>
-                            <label class="checkbox-item"><input type="checkbox" name="Entregaveis[]" value="Carrossel"> Carrossel (Arraste para o lado)</label>
-                            <label class="checkbox-item"><input type="checkbox" name="Entregaveis[]" value="Mídia OOH"> Mídia OOH (Outdoor, Painel)</label>
-                            <label class="checkbox-item"><input type="checkbox" name="Entregaveis[]" value="Identidade Visual"> Identidade Visual / Logo</label>
-                            <label class="checkbox-item"><input type="checkbox" name="Entregaveis[]" value="Impressos"> Impressos (Panfleto, Cartão)</label>
+                            <label class="checkbox-item"><input type="checkbox" name="Entregaveis[]" value="Post Feed">
+                                Posts para Feed (Insta/FB)</label>
+                            <label class="checkbox-item"><input type="checkbox" name="Entregaveis[]" value="Stories">
+                                Stories animados/estáticos</label>
+                            <label class="checkbox-item"><input type="checkbox" name="Entregaveis[]" value="Carrossel">
+                                Carrossel (Arraste para o lado)</label>
+                            <label class="checkbox-item"><input type="checkbox" name="Entregaveis[]" value="Mídia OOH">
+                                Mídia OOH (Outdoor, Painel)</label>
+                            <label class="checkbox-item"><input type="checkbox" name="Entregaveis[]"
+                                    value="Identidade Visual"> Identidade Visual / Logo</label>
+                            <label class="checkbox-item"><input type="checkbox" name="Entregaveis[]" value="Impressos">
+                                Impressos (Panfleto, Cartão)</label>
                         </div>
                     </div>
 
                     <h3 class="form-section-title"><i class="fas fa-folder-open"></i> 5. Envio de Arquivos</h3>
-                    
+
                     <div class="form-group">
-                        <label for="arquivosLink">Link do Drive / WeTransfer <span>(Recomendado para envio de muitos ficheiros)</span></label>
-                        <input type="url" id="arquivosLink" name="Link_Arquivos" class="form-control" placeholder="https://drive.google.com/...">
+                        <label for="arquivosLink">Link do Drive / WeTransfer <span>(Recomendado para envio de muitos
+                                ficheiros)</span></label>
+                        <input type="url" id="arquivosLink" name="Link_Arquivos" class="form-control"
+                            placeholder="https://drive.google.com/...">
                     </div>
-                    
+
                     <div class="form-row">
                         <div class="form-group">
                             <label for="logoUpload">A Sua Logo Atual <span>(Anexe a sua logo aqui)</span></label>
-                            <input type="file" id="logoUpload" name="Anexo_Logo" class="form-control" accept="image/*,.zip,.rar,.ai,.eps,.pdf">
+                            <input type="file" id="logoUpload" name="Anexo_Logo" class="form-control"
+                                accept="image/*,.zip,.rar,.ai,.eps,.pdf">
                         </div>
                         <div class="form-group">
                             <label for="refUpload">Imagens de Referência <span>(Anexe inspirações aqui)</span></label>
-                            <input type="file" id="refUpload" name="Anexo_Referencias" class="form-control" accept="image/*,.zip,.rar">
+                            <input type="file" id="refUpload" name="Anexo_Referencias" class="form-control"
+                                accept="image/*,.zip,.rar">
                         </div>
                     </div>
 
                     <div class="form-group text-center" style="margin-top: 50px; margin-bottom: 0;">
-                        <button type="submit" class="btn btn-primary" style="width: 100%; max-width: 350px; border: none; font-size: 1.1rem; padding: 18px;">
+                        <button type="submit" class="btn btn-primary"
+                            style="width: 100%; max-width: 350px; border: none; font-size: 1.1rem; padding: 18px;">
                             <i class="fas fa-paper-plane"></i> Enviar Briefing
                         </button>
                     </div>
@@ -175,4 +161,5 @@
     </section>
 
 </body>
+
 </html>
