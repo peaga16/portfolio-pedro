@@ -1167,6 +1167,8 @@ footer {
         text-decoration: none !important;
         transform: none !important;
         opacity: 1 !important;
+        -webkit-user-select: text !important;
+        user-select: text !important;
     }
 
     .cv-header {
@@ -1194,12 +1196,16 @@ footer {
         display: block !important;
         font-size: 9.5pt !important;
         margin-top: 4px !important;
+        -webkit-user-select: text !important;
+        user-select: text !important;
     }
 
     .cv-contact span {
-        display: inline-block !important;
+        display: inline !important;
         margin-right: 6px !important;
         color: #000 !important;
+        -webkit-user-select: text !important;
+        user-select: text !important;
     }
 
     .cv-contact span::after {
