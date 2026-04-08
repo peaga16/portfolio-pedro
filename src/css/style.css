@@ -1083,17 +1083,18 @@ footer {
 @media print {
     @page {
         size: A4 portrait;
-        margin: 12mm 15mm;
+        margin: 6mm 8mm;
     }
 
     html,
     body {
         width: 100% !important;
         background: #ffffff !important;
-        color: #000000 !important;
+        color: #000 !important;
         margin: 0 !important;
         padding: 0 !important;
-        font-family: Arial, Helvetica, sans-serif !important;
+        font-family: 'Segoe UI', Arial, sans-serif !important;
+        font-size: 9.5pt !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
@@ -1116,27 +1117,22 @@ footer {
     i.fas,
     i.fab,
     i.fa {
-        font-size: 0 !important;
-        width: 0 !important;
-        margin: 0 !important;
-        padding: 0 !important;
+        display: none !important;
     }
 
     * {
         filter: none !important;
         backdrop-filter: none !important;
-        mask-image: none !important;
-        -webkit-mask-image: none !important;
         box-shadow: none !important;
         text-shadow: none !important;
-        -webkit-font-smoothing: antialiased !important;
     }
 
     .gradient-text {
         background: none !important;
-        -webkit-background-clip: border-box !important;
-        -webkit-text-fill-color: #000000 !important;
-        color: #000000 !important;
+        background-clip: unset !important;
+        -webkit-background-clip: unset !important;
+        -webkit-text-fill-color: unset !important;
+        color: #000 !important;
     }
 
     #curriculo,
@@ -1172,30 +1168,33 @@ footer {
     }
 
     .cv-header {
-        text-align: left !important;
-        margin-bottom: 12px !important;
-        border-bottom: 2px solid #000 !important;
-        padding-bottom: 8px !important;
+        margin-bottom: 6px !important;
+        border-bottom: 1px solid #000 !important;
+        padding-bottom: 4px !important;
     }
 
     .cv-header h1 {
-        font-size: 18pt !important;
-        margin-bottom: 2px !important;
-        text-transform: uppercase !important;
-        font-weight: bold !important;
+        font-size: 16pt !important;
+        font-weight: 700 !important;
+        margin: 0 0 1px 0 !important;
+        line-height: 1.1 !important;
+        text-transform: none !important;
+        letter-spacing: 0 !important;
     }
 
     .cv-subtitle {
-        font-size: 11pt !important;
-        margin-bottom: 6px !important;
-        font-weight: normal !important;
-        color: #333333 !important;
+        font-size: 10pt !important;
+        font-weight: 400 !important;
+        color: #333 !important;
+        margin: 0 0 3px 0 !important;
+        line-height: 1.1 !important;
     }
 
     .cv-contact {
         display: block !important;
-        font-size: 9.5pt !important;
-        margin-top: 4px !important;
+        font-size: 8pt !important;
+        line-height: 1.4 !important;
+        margin: 0 !important;
         -webkit-user-select: text !important;
         user-select: text !important;
     }
@@ -1222,40 +1221,59 @@ footer {
         display: none !important;
     }
 
-    .cv-grid {
-        display: block !important;
+    .cv-divider {
+        display: none !important;
     }
 
-    .cv-main,
+    .cv-grid {
+        display: block !important;
+        margin-top: 5px !important;
+    }
+
+    .cv-main {
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 6px !important;
+    }
+
     .cv-sidebar {
         display: block !important;
         width: 100% !important;
     }
 
     .cv-title {
-        font-size: 11pt !important;
+        font-size: 10pt !important;
         text-transform: uppercase !important;
-        border-bottom: 1.5px solid #000 !important;
+        border-bottom: none !important;
         padding-bottom: 2px !important;
-        margin-top: 14px !important;
-        margin-bottom: 6px !important;
-        font-weight: bold !important;
+        margin: 5px 0 3px 0 !important;
+        font-weight: 700 !important;
         display: block !important;
+        line-height: 1.2 !important;
+        letter-spacing: 0 !important;
+        color: #000 !important;
+        border-top: 2px solid #000 !important;
+        padding-top: 4px !important;
     }
 
     .cv-section {
-        margin-bottom: 10px !important;
+        margin-bottom: 4px !important;
+    }
+
+    .cv-section:first-of-type {
+        margin-bottom: 4px !important;
     }
 
     .cv-section p {
-        font-size: 9.5pt !important;
-        line-height: 1.3 !important;
-        margin-bottom: 6px !important;
+        font-size: 9pt !important;
+        line-height: 1.4 !important;
+        margin: 2px 0 2px 0 !important;
         text-align: justify !important;
+        color: #333 !important;
     }
 
     .cv-item {
-        margin-bottom: 9px !important;
+        margin-bottom: 4px !important;
         page-break-inside: avoid !important;
     }
 
@@ -1264,80 +1282,96 @@ footer {
         justify-content: space-between !important;
         align-items: baseline !important;
         margin-bottom: 1px !important;
+        gap: 10px !important;
     }
 
     .cv-item-header h5 {
-        font-size: 10pt !important;
-        font-weight: bold !important;
+        font-size: 9pt !important;
+        font-weight: 600 !important;
         margin: 0 !important;
         color: #000 !important;
+        line-height: 1.2 !important;
+        flex: 1 !important;
     }
 
     .cv-date {
-        font-size: 9.5pt !important;
-        font-weight: bold !important;
-        background: transparent !important;
+        font-size: 8pt !important;
+        font-weight: 600 !important;
         color: #000 !important;
-        padding: 0 !important;
-        border-radius: 0 !important;
+        background: transparent !important;
+        padding: 3px 8px !important;
+        border: 1px solid #000 !important;
+        border-radius: 50px !important;
+        flex-shrink: 0 !important;
     }
 
     .cv-company {
-        font-size: 9.5pt !important;
+        font-size: 8.5pt !important;
         font-style: italic !important;
         margin-bottom: 2px !important;
+        color: #555 !important;
         display: block !important;
-        color: #333333 !important;
+        line-height: 1.2 !important;
     }
 
     .cv-item ul,
     .cv-list {
-        padding-left: 15px !important;
-        margin: 0 !important;
+        padding-left: 16px !important;
+        margin: 2px 0 !important;
     }
 
     .cv-item ul li,
     .cv-list li {
-        font-size: 9pt !important;
+        font-size: 8.5pt !important;
         margin-bottom: 2px !important;
         line-height: 1.3 !important;
-        color: #000 !important;
+        color: #333 !important;
     }
 
     .skill-group {
-        margin-bottom: 5px !important;
+        margin-bottom: 4px !important;
         display: block !important;
+        page-break-inside: avoid !important;
     }
 
     .skill-group h6 {
-        font-size: 10pt !important;
-        font-weight: bold !important;
-        display: inline !important;
-        margin-right: 4px !important;
+        font-size: 8pt !important;
+        font-weight: 700 !important;
+        display: block !important;
+        margin: 0 0 1px 0 !important;
         color: #000 !important;
+        line-height: 1.15 !important;
+        border-bottom: 0.8px solid #bbb !important;
+        padding-bottom: 1px !important;
     }
 
     .cv-tags {
-        display: inline !important;
-        gap: 0 !important;
+        display: block !important;
+        margin-bottom: 2px !important;
     }
 
     .cv-tags span {
-        display: inline !important;
+        display: inline-block !important;
         background: transparent !important;
         border: none !important;
-        padding: 0 !important;
-        font-size: 9.5pt !important;
-        color: #000 !important;
+        padding: 0.5px 3px 0.5px 0 !important;
+        font-size: 7pt !important;
+        color: #1a1a1a !important;
+        line-height: 1.25 !important;
     }
 
     .cv-tags span::after {
-        content: ", ";
-        color: #000 !important;
+        content: "" !important;
     }
 
-    .cv-tags span:last-child::after {
-        content: "";
+    .cv-tags span::before {
+        content: "• " !important;
+        color: #999 !important;
+        margin-right: 2px !important;
+    }
+
+    .cv-tags span:first-child::before {
+        content: "" !important;
     }
 
     .mt-3 {
